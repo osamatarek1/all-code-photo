@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+   
+    <title>Css background-attachment / position /size </title>
+    <link rel='stylesheet' href='2.css' />
+    <style>
+        /* dol low 7abb t3ml sora we tt7km fe el lwon bt3haa mn 5syt filter we tt7km fe 7gmha mn el width */
+   img {
+     width: 5%; 
+     height: auto; 
+     float: left; 
+  }
+  .blur {filter: blur(4px);}
+  .brightness {filter: brightness(0.30); background-size: 500px 500px;}
+  .contrast {filter: contrast(180%);}
+  .grayscale {filter: grayscale(100%);}
+  .huerotate {filter: hue-rotate(180deg);}
+  .invert {filter: invert(100%);}
+  .opacity {filter: opacity(50%);}
+  .saturate {filter: saturate(7);}
+  .sepia {filter: sepia(100%);}
+  .shadow {filter: drop-shadow(8px 8px 10px green);}
+
+
+
+
+
+
+
+      /* dol bto3 band background-origin we el mfrod el band da be7tk shoya el sora 2ly gwa el div */
+
+  #example1 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(osama.q.png), url(aaa.jpg);
+  background-repeat: no-repeat;
+  background-origin: content-box, padding-box;
+  
+}
+
+#example2 {
+
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(osama.q.png),url(aaa.jpg);
+  background-size: 50px 100px, 70px 50px; 
+  background-position: 12% 0%, 70% 60%; 
+  background-repeat: no-repeat;
+  background-origin: content-box, border-box;
+}
+
+#example3 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(img_tree.gif), url(paper.gif);
+  background-repeat: no-repeat;
+  background-origin: content-box, content-box;
+}
+
+
+
+  
+  </style>
+</head>
+
+<body>
+    <!-- hna dars el zero at3lmt fe azy 23ml el sora gwa div we akkrha we mkrrhash br7ty -->
+<div>
+<h2>osama tarek</h2>
+<p>this is paragraph</p>
+<p>this is paragraph</p>
+<p>this is paragraph</p>
+<p>this is paragraph</p>
+<p>this is paragraph</p>
+<p>this is paragraph</p>
+<p>this is paragraph</p>
+<p>this is paragraph</p>
+</div>
+<br>
+<!-- hna t3lem trkeb 2 sora  -->
+<h1>hna t3lem trkeb 2 sora</h1>
+<div class="osama">
+
+    
+</div>
+<br>
+
+<!-- de sor 3mlha kont bt3lm azy 28er lwon el sora be 5set filte m3 el 3lm msh sh8ala fe kol el mok3 zy internet exploer -->
+<h1>The filter Property b3lmk 5set el filter bt8er beha lwon el sora </h1>
+
+<img src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="blur" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="brightness" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="contrast" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="grayscale" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="huerotate" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="invert" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="opacity" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="saturate" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="sepia" src="osama.q.png" alt="Pineapple" width="300" height="300">
+<img class="shadow" src="osama.q.png" alt="Pineapple" width="300" height="300">
+
+<p><strong>Note:</strong> The filter property is not supported in Edge 12 or Internet Explorer.</p>
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+<h2>background-origin: content-box, padding-box:</h2>
+<div id="example1">
+  <h2>Hello World</h2>
+  <p>The "paper.gif" background image starts from the upper left corner of the padding edge.</p>
+  <p>The "img_tree.gif" background image starts from the upper left corner of the content.</p>
+</div>
+
+<h2>background-origin: content-box, border-box:</h2>
+<div id="example2">
+  <h2>Hello World</h2>
+  <p>The "paper.gif" background image starts from the upper left corner of the border.</p>
+  <p>The "img_tree.gif" background image starts from the upper left corner of the content.</p>
+</div>
+
+<h2>background-origin: content-box, content-box:</h2>
+<div id="example3">
+  <h2>Hello World</h2>
+  <p>Both background images starts from the upper left corner of the content.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- hna low anta 3aoz tdef 2x sora fe div bardo bs zyda 5set background-blend-mode de bt3ml shfafya 
+
+<style>
+    #myDIV { 
+      width: 400px;
+      height: 400px;
+      background-repeat: no-repeat, repeat;
+      background-image: url("img_tree.gif"), url("paper.gif");
+      background-blend-mode: lighten;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1>The background-blend-mode Property</h1>
+    
+    <div id="myDIV"></div>
+    
+    <p><b>Note:</b> Edge prior 79 do not support the background-blend-mode property.</p>
+    
+    </body>
+    </html>-->
+    
+
+
+
+
+
+
+
+</body>
+</html>
